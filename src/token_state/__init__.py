@@ -1,8 +1,8 @@
 """token-state package."""
 
-from .models import TokenInfo, TokenSearchResult, TokenSource, TokenStatus, TokenType, Platform
+from .models import Platform, TokenInfo, TokenSearchResult, TokenSource, TokenStatus, TokenType
 from .token_finder import find_tokens
-from .token_parser import parse_token, parse_tokens, mask_token
+from .token_parser import mask_token, parse_token, parse_tokens
 
 __all__ = [
     "TokenInfo",

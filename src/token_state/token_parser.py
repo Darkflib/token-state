@@ -2,15 +2,14 @@
 
 from __future__ import annotations
 
+import re
 from collections.abc import Iterable
 from datetime import UTC, datetime
-import re
 from typing import Any
 
 import jwt
 
 from .models import Platform, TokenInfo, TokenSource, TokenStatus, TokenType
-
 
 JWT_PATTERN = re.compile(r"eyJ[a-zA-Z0-9\-_]+\.eyJ[a-zA-Z0-9\-_]+\.[a-zA-Z0-9\-_]+")
 API_KEY_PATTERN = re.compile(r"sk-ant-[a-zA-Z0-9\-_]{6,}")

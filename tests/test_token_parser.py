@@ -1,11 +1,9 @@
-import json
 from datetime import UTC, datetime, timedelta
-from pathlib import Path
 
 import jwt
 
-from token_state.token_parser import mask_token, parse_token
 from token_state.models import Platform, TokenSource, TokenStatus, TokenType
+from token_state.token_parser import mask_token, parse_token
 
 
 def test_mask_token_masks_middle() -> None:
